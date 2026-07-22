@@ -402,7 +402,7 @@ footer .wave#wave4 {
 .Samanah-Projects {
   color: #ddd;
 }
-.con1 span {
+.span {
   color: #965734;
   font-size: larger;
 }
@@ -459,6 +459,43 @@ footer .wave#wave4 {
 }
 .row > .col-md:not(:last-child) .box-con2 {
   border-right: 1px solid #3b3940;
+}
+
+/* =================== CONTAINER 3 ================ */
+.con3 {
+  color: #ddd;
+}
+.box-con3 {
+  width: 100%;
+  border: 1px solid #3b3940;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+.box-con3 img {
+  width: 100%;
+  display: block;
+  transition: all 0.2s ease;
+}
+.box-con3 h5,
+p {
+  font-size: medium;
+  padding: 10px;
+  transition: all 0.3s linear;
+}
+.box-con3:hover {
+  box-shadow: 0px 0px 7px #4a4654;
+}
+.box-con3:hover h5 {
+  color: #b46d43;
+  text-shadow: 0px 0px 5px #b46d43;
+}
+.box-con3:hover img {
+  transform: scale(1.15);
+}
+.box-con3:hover p {
+  transform: translateX(45%);
+  color: #b46d43;
+  text-shadow: 0px 0px 5px #b46d43;
 }
 
 @media (max-width: 992px) {
