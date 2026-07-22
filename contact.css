@@ -1,0 +1,844 @@
+
+ 
+
+/*==================================================
+                CONTACT SECTION
+==================================================*/
+
+.contact-section{
+
+    background:#2F2F31;
+    overflow:hidden;
+}
+
+.contact-subtitle{
+    color:#B46D43;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.contact-title{
+    color:#B46D43;
+    font-size:46px;
+    font-weight:800;
+    line-height:1.2;
+    margin-bottom:45px;
+}
+
+
+/*==================================================
+                    FORM
+==================================================*/
+
+.contact-form{
+
+
+    background:#67676709;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+
+.custom-input{
+    width:100%;
+    background-color:#3A3A3C; /* رنگ پس‌زمینه */
+    border:1px solid #ddd;
+    border-radius:14px;
+    padding:15px 18px;
+    font-size:15px;
+    color:white;
+    outline:none;
+    box-shadow:none !important;
+    transition:.35s ease;
+}
+
+.custom-input::placeholder{
+    color:white;
+}
+
+
+.custom-input:focus{
+    background-color:#444;
+    border-color:#B46D43;
+      box-shadow:
+    0 18px 35px rgba(180,109,67,.18) !important
+}
+
+textarea.custom-input{
+    resize:none;
+    min-height:170px;
+}
+
+
+/*==================================================
+                    BUTTON
+==================================================*/
+
+.contact-btn{
+    background:#B46D43;
+    color:#fff;
+    border:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.35s ease;
+}
+
+
+/* Hover فقط برای کامپیوتر */
+
+@media (hover:hover){
+
+.contact-btn:hover{
+    background:#2F2F31;
+    transform:translateY(-4px);
+}
+
+.contact-box:hover{
+    transform:translateX(8px);
+    border-color:#B46D43;
+    box-shadow:0 12px 30px rgba(180,109,67,.18);
+}
+
+.contact-box:hover .icon{
+    background:#B46D43;
+    color:#fff;
+    transform:rotate(10deg);
+}
+
+.social a:hover{
+    background:#B46D43;
+    color:#fff;
+    transform:translateY(-5px);
+}
+
+}
+
+/*==================================================
+            CONTACT INFO
+==================================================*/
+
+.contact-info{
+    background:#67676709;
+    padding:40px;
+    border-radius:28px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    height:100%;
+}
+
+
+.contact-badge{
+    display:inline-block;
+    color:#B46D43;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:3px;
+}
+
+
+.contact-info h3{
+    font-size:30px;
+    font-weight:800;
+    color:#B46D43;
+    margin-bottom:15px;
+}
+
+
+.contact-info p{
+    color:#78736F;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+
+
+/*==============================
+        CONTACT BOX
+==============================*/
+
+
+.contact-box{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    width:100%;
+
+    padding:18px;
+
+    border:1px solid #ECECEC;
+
+    border-radius:18px;
+
+    margin-bottom:18px;
+
+    background:#67676709;
+
+    transition:.35s ease;
+
+    overflow:hidden;
+}
+
+
+
+.contact-box > div:last-child{
+
+    flex:1;
+    min-width:0;
+
+}
+
+
+
+/* Icon */
+
+.contact-box .icon{
+
+    width:50px;
+    height:50px;
+
+    min-width:50px;
+
+    border-radius:16px;
+
+    background:#F3F0ED;
+
+    color:#B46D43;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:22px;
+
+    transition:.35s ease;
+
+    flex-shrink:0;
+
+}
+
+
+
+/* Text */
+
+
+.contact-box small{
+
+    color:white;
+
+    font-size:14px;
+
+}
+
+
+
+.contact-box h6{
+
+    margin:3px 0 0;
+
+    font-weight:700;
+
+    color:white;
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    overflow-wrap:anywhere;
+
+    word-break:break-word;
+
+}
+
+
+
+
+
+/*==============================
+            HOVER
+==============================*/
+
+
+@media(hover:hover){
+
+.contact-box:hover{
+
+    transform:translateY(-8px) scale(1.02);
+
+    border-color:#B46D43;
+
+    box-shadow:
+    0 18px 35px rgba(180,109,67,.18);
+
+}
+
+
+.contact-box:hover .icon{
+
+    background:#B46D43;
+
+    color:#fff;
+
+    transform:rotate(10deg) scale(1.1);
+
+}
+
+
+.contact-box:hover h6{
+
+    color:#B46D43;
+
+}
+
+}
+
+
+
+
+/*==============================
+            SOCIAL
+==============================*/
+
+
+.social{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.social a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:14px;
+
+    background:#F4F4F4;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#4A4654;
+
+    text-decoration:none;
+
+    transition:.35s ease;
+
+}
+
+
+
+.social a:hover{
+
+    background:#B46D43;
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+/*==============================
+        TABLET
+==============================*/
+
+
+@media(max-width:991px){
+
+
+.contact-info{
+
+    padding:30px;
+
+}
+
+
+
+.contact-box{
+
+    padding:16px;
+
+    gap:14px;
+
+}
+
+
+
+.contact-box .icon{
+
+    width:48px;
+
+    height:48px;
+
+    min-width:48px;
+
+    font-size:20px;
+
+}
+
+
+.contact-box h6{
+
+    font-size:15px;
+
+}
+
+
+
+}
+
+
+
+
+
+/*==============================
+        MOBILE
+==============================*/
+
+
+@media(max-width:576px){
+
+
+.contact-info{
+
+    padding:20px;
+
+}
+
+
+
+.contact-info h3{
+
+    font-size:24px;
+
+}
+
+
+
+.contact-box{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    align-items:center;
+
+    padding:20px 15px;
+
+}
+
+
+
+.contact-box .icon{
+
+    margin:auto;
+
+}
+
+
+
+.contact-box > div:last-child{
+
+    width:100%;
+
+}
+
+
+
+.contact-box h6{
+
+    font-size:15px;
+
+}
+
+
+
+.social{
+
+    justify-content:center;
+
+}
+
+
+}
+/*==================================================
+        TABLET + MOBILE HOVER EFFECT
+==================================================*/
+
+
+@media(max-width:991px){
+
+
+.contact-box:hover{
+
+    transform:translateY(-8px) scale(1.02);
+
+    border-color:#B46D43;
+
+    box-shadow:
+    0 15px 35px rgba(180,109,67,.18);
+
+}
+
+
+
+.contact-box:hover .icon{
+
+    background:#B46D43;
+
+    color:#fff;
+
+    transform:rotate(8deg) scale(1.12);
+
+}
+
+
+
+.contact-box:hover h6{
+
+    color:#B46D43;
+
+}
+
+
+
+.social a:hover{
+
+    background:#B46D43;
+
+    color:#fff;
+
+    transform:translateY(-6px) scale(1.08);
+
+}
+
+
+
+.social a:hover i{
+
+    transform:rotate(10deg) scale(1.15);
+
+}
+
+
+}
+
+
+
+/* موبایل کوچک */
+
+@media(max-width:576px){
+
+
+.contact-box:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.contact-box:hover .icon{
+
+    transform:scale(1.1);
+
+}
+
+
+
+.social a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+}
+
+
+/*==================================================
+                    MAP SECTION
+==================================================*/
+
+
+.map-box{
+
+    width:100%;
+
+    height:430px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    background:#fff;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.10);
+
+    transition:.4s ease;
+
+}
+
+
+
+/* Hover Desktop */
+
+.map-box:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 25px 50px rgba(180,109,67,.18);
+
+}
+
+
+
+
+.map-box iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:0;
+
+    display:block;
+
+}
+
+
+
+
+/*==================================================
+                    LARGE TABLET
+==================================================*/
+
+
+@media(max-width:991px){
+
+
+.map-box{
+
+    height:380px;
+
+    border-radius:24px;
+
+}
+
+
+
+}
+
+
+
+
+
+/*==================================================
+                    TABLET
+==================================================*/
+
+
+@media(max-width:768px){
+
+
+.map-box{
+
+    height:330px;
+
+    border-radius:22px;
+
+}
+
+
+
+}
+
+
+
+
+
+/*==================================================
+                    MOBILE
+==================================================*/
+
+
+@media(max-width:576px){
+
+
+.map-box{
+
+    height:260px;
+
+    border-radius:18px;
+
+    margin-top:35px !important;
+
+}
+
+
+
+}
+
+
+
+
+/*==================================================
+                SMALL MOBILE
+==================================================*/
+
+
+@media(max-width:400px){
+
+
+.map-box{
+
+    height:230px;
+
+}
+
+
+
+}
+
+
+/*==========================
+PAGE HEADER
+==========================*/
+
+.page-header{
+
+    position: relative;
+
+    height:350px;
+
+    background: #B46D43;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+  
+
+}
+
+
+
+
+
+
+.page-header-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+
+
+.page-header-content h1{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+
+
+.page-header-content p{
+
+    font-size:18px;
+
+    color:#ddd;
+
+    letter-spacing:1px;
+
+}
+
+
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:991px){
+
+.page-header{
+
+    height:300px;
+
+}
+
+.page-header-content h1{
+
+    font-size:40px;
+    padding-top: 10px;
+
+}
+
+}
+
+
+
+@media(max-width:576px){
+
+.page-header{
+
+    height:300px;
+
+}
+
+.page-header-content h1{
+
+    font-size:30px;
+    padding-top: 80px !important;
+
+}
+
+.page-header-content p{
+
+    font-size:15px;
+
+}
+
+}
+
