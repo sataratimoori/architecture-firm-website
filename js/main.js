@@ -11,3 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+// counter
+$(document).ready(function () {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+});
+$('.counter').addClass('animate__fadeInDownBig');
+$('h3').addClass('animate__fadeIn');
