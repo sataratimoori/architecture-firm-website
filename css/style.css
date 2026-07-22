@@ -137,20 +137,20 @@ font-weight:600;
 
 
 .navbar-brand img {
-    height: 60px;
+    height: 65px;
     width: auto;
     display: block;
 }
 
 @media (max-width: 992px) {
     .navbar-brand img {
-        height: 68px;
+        height: 60px;
     }
 }
 
 @media (max-width: 576px) {
     .navbar-brand img {
-        height: 43px;
+        height: 55px;
     }
 }
 .nav-link{
@@ -423,6 +423,7 @@ footer .menu {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   margin: 10px 0;
 }
 
@@ -729,3 +730,130 @@ footer .wave#wave4 {
     height: 35px;
 }
 /* ------testimonial  close-------*/
+
+/* Banner */
+
+
+/* banner animation */
+.banner{
+  background-color: var(--accent);
+  color: var(--light)
+}
+
+/* Variables only for this section */
+.banner{
+    --item-height:60px;
+    --scroll-height:300px;
+    --animation-duration:14s;
+}
+
+.wave-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:25px;
+    overflow:hidden;
+    min-height:calc(var(--scroll-height) + 50px);
+}
+
+.wave-title{
+    font-size:3rem;
+    font-weight:700;
+    color:#fff;
+    white-space:nowrap;
+    margin:0;
+}
+
+.scroll-window{
+    position:relative;
+    height:var(--item-height);
+    overflow:hidden;
+}
+
+.scroll-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    transform:translateY(calc(var(--item-height) * -2));
+    animation:stepScroll var(--animation-duration) linear infinite;
+}
+
+.scroll-list li{
+    height:var(--item-height);
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    font-size:3rem;
+    font-weight:700;
+    white-space:nowrap;
+    color:var(--clr);
+}
+
+.fade{
+    position:absolute;
+    left:0;
+    right:0;
+    height:45px;
+    z-index:2;
+    pointer-events:none;
+}
+
+.top-fade{
+    top:0;
+    background:linear-gradient(to bottom,#333,transparent);
+}
+
+.bottom-fade{
+    bottom:0;
+    background:linear-gradient(to top,#333,transparent);
+}
+
+@keyframes stepScroll{
+    0%,11.90%{
+        transform:translateY(calc(var(--item-height) * -2));
+    }
+    14.28%,26.19%{
+        transform:translateY(calc(var(--item-height) * -3));
+    }
+    28.57%,40.47%{
+        transform:translateY(calc(var(--item-height) * -4));
+    }
+    42.85%,54.76%{
+        transform:translateY(calc(var(--item-height) * -5));
+    }
+    57.14%,69.04%{
+        transform:translateY(calc(var(--item-height) * -6));
+    }
+    71.42%,83.33%{
+        transform:translateY(calc(var(--item-height) * -7));
+    }
+    85.71%,97.62%{
+        transform:translateY(calc(var(--item-height) * -8));
+    }
+    100%{
+        transform:translateY(calc(var(--item-height) * -9));
+    }
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .wave-container{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+
+    .wave-title,
+    .scroll-list li{
+        font-size:2rem;
+    }
+
+    .scroll-list li{
+        justify-content:center;
+    }
+}
