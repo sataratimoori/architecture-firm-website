@@ -408,7 +408,7 @@ margin:12px 0;
 footer {
   position: relative;
   width: 100%;
-background:var(--accent);
+  background:var(--accent);
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
