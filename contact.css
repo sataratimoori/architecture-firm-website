@@ -94,7 +94,7 @@ textarea.custom-input{
 @media (hover:hover){
 
 .contact-btn:hover{
-    background:#2F2F31;
+    background:#B46D43;
     transform:translateY(-4px);
 }
 
@@ -736,7 +736,7 @@ PAGE HEADER
 
     height:350px;
 
-    background: #B46D43;
+    background: #2F2F31 ;
 
     display:flex;
 
@@ -745,6 +745,7 @@ PAGE HEADER
     justify-content:center;
 
     overflow:hidden;
+    border-bottom: 5px solid #B46D43;
   
 
 }
@@ -779,6 +780,7 @@ PAGE HEADER
     text-transform:uppercase;
 
     letter-spacing:2px;
+    margin-top: 60px;
 
 }
 
