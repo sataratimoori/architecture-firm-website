@@ -44,7 +44,7 @@ $('h3').addClass('animate__fadeIn');
 
 // ANIMATEDBANNER
 const text =
-"            Spaces to Live, Work, and Play! We want to revolutionise every aspect of human life. Better cities, pleasant workplaces, fantastic  homes and great spaces to enjoy life; we find the best solution for every project in every situation by collecting data and parameters. ";
+"Spaces to Live, Work, and Play! We want to revolutionise every aspect of human life. Better cities, pleasant workplaces, fantastic  homes and great spaces to enjoy life; we find the best solution for every project in every situation by collecting data and parameters. ";
 
 const paragraph = document.getElementById("paragraph");
 
