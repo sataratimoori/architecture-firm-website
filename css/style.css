@@ -221,7 +221,7 @@ body {
 .hero-btn:hover {
   background: #965734;
 }
-
+ 
 /* HERO */
 
 .hero {
@@ -239,6 +239,45 @@ body {
 
   align-items: center;
 }
+.hero1 {
+    height: 100vh;
+
+  background: url("../images/anders-jilden-Sc5RKXLBjGg-unsplash.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+}
+.hero1 h1 {
+   font-size: clamp(3rem, 7vw, 8rem);
+
+  font-weight: 700;
+
+  color: var(--light);
+
+  line-height: 0.95;
+
+  margin-bottom: 30px;
+  margin-top: 1.5rem;
+}
+@media (max-width: 992px) {
+  .hero1 h1 {
+    margin-top: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero1 h1 {
+    margin-top: 0.5rem;
+  }
+}
+
 
 .hero h1 {
   font-size: clamp(3rem, 7vw, 8rem);
@@ -289,6 +328,13 @@ body {
 
   color: #ddd;
 }
+.hero1 p {
+  font-size: 1.2rem;
+
+  max-width: 650px;
+
+  color: #ddd;
+}
 
 /* MOBILE */
 
@@ -300,6 +346,14 @@ body {
   .hero p {
     margin: auto;
   }
+    .hero1 {
+    text-align: center;
+  }
+
+  .hero1 p {
+    margin: auto;
+  }
+
 
   .navbar-collapse {
     background: rgba(47, 47, 49, 0.97);

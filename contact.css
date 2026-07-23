@@ -736,7 +736,10 @@ PAGE HEADER
 
     height:350px;
 
-    background: #2F2F31 ;
+    background: url("images/iltun-huseynli-rfklsTwIYBM-unsplash.jpg");
+      background-size: cover;
+
+  background-position: center;
 
     display:flex;
 
