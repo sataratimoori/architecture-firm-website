@@ -182,8 +182,9 @@ body {
 
   position: relative;
 }
-.nav-link:hover {
-  font-weight: 700;
+.nav-link:hover , .nav-link.active{
+  font-weight: 700 !important;
+  color: var(--accent) !important;
 }
 
 .nav-link::after {
@@ -924,6 +925,9 @@ p {
 /* TEAM */
 
 /* SLIDESHOW */
+#slide {
+  margin-bottom: 100px;
+}
 
 .panorama-swiper{
   width: 100%;
@@ -950,13 +954,11 @@ p {
   transform:translateX(-50%);
   width:80%;
   text-align:center;
-  color: var(--secondary);
+  color: var(--light);
+  font-weight: 700;
   z-index:2;
-  background: linear-gradient(
-    to top,
-    rgba(179,107,66,1),
-    transparent
-  );
+  background: var(--accent);
+  padding-top: 30px;
 }
 
 .slide img{
@@ -1007,7 +1009,7 @@ p {
 
 
 .section-sub{
-  color:var(--taupe);
+  color:var(--light);
   font-size:14px;
   max-width:480px;
   line-height:1.8;
@@ -1639,7 +1641,6 @@ i {
     position:sticky;
     top:25vh;
 
-    font-family:"Inter",sans-serif;
     font-size:2.8rem;
     font-weight:700;
     color:#fff;
