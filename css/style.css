@@ -67,6 +67,14 @@
 --gray:#78736F;
 --light:#F6F4EF;
 
+
+--dark-1:#2F2F31; 
+--dark-2:#4A4654; 
+--dark-3:#3D434F; 
+--taupe:#78736F; 
+--copper:#B46D43; 
+--cream:#F3F1EC;
+
 }
 * {
   margin: 0;
@@ -334,6 +342,8 @@ margin:12px 0;
 }
 
 
+/* ==============================footer============================= */
+
 
 
 /* start services card */
@@ -547,14 +557,8 @@ margin:12px 0;
 
 /* END our work process */
 
-
-
-
 /* ======================================footer
 ========================================== */
-
-
-
 
 footer {
   position: relative;
@@ -666,5 +670,331 @@ footer .wave#wave4 {
   }
   100% {
     background-position-x: 1000px;
+  }
+}
+
+
+/* TEAM */
+
+/* SLIDESHOW */
+
+.panorama-swiper{
+  width: 100%;
+  height: 500px;
+}
+
+.panorama-swiper .swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panorama-swiper .image-slide{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.slide-info{
+  position:absolute;
+  bottom:10%;
+  left:50%;
+  transform:translateX(-50%);
+  width:80%;
+  text-align:center;
+  color: var(--secondary);
+  z-index:2;
+  background: linear-gradient(
+    to top,
+    rgba(179,107,66,1),
+    transparent
+  );
+}
+
+.slide img{
+  object-position: top;
+}
+
+/*TEAM SECTION */
+
+.section-team{
+  padding:100px 0;
+  position:relative;
+  overflow:hidden;
+}
+
+
+.grid-bg{
+  position:absolute;
+  inset:0;
+  background-image:
+  linear-gradient(var(--dark-2) 0.5px, transparent 0.5px),
+  linear-gradient(90deg,var(--dark-2) 0.5px,transparent 0.5px);
+  background-size:40px 40px;
+  opacity:.18;
+}
+
+
+.eyebrow{
+  color:var(--copper);
+  font-size:13px;
+  letter-spacing:3px;
+  margin-bottom:14px;
+}
+
+
+.eyebrow .line{
+  display:inline-block;
+  width:28px;
+  height:1px;
+  background:var(--copper);
+  margin-left:10px;
+}
+
+
+.section-title{
+  font-size:44px;
+  margin-bottom:14px;
+}
+
+
+.section-sub{
+  color:var(--taupe);
+  font-size:14px;
+  max-width:480px;
+  line-height:1.8;
+}
+
+
+/*BENTO TEAM GRID */
+
+.team-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr;
+  gap:20px;
+  height:520px;
+  margin-top:56px;
+}
+
+.team-stack{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+  height:100%;
+}
+
+.card{
+  position:relative;
+  border-radius:8px;
+  overflow:hidden;
+  cursor:pointer;
+  height:100%;
+  min-height:0;
+}
+
+
+.team-stack .card{
+  flex:1;
+}
+
+/* IMAGE */
+.photo{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center top;
+  filter:grayscale(100%) brightness(.75);
+  transition:.5s ease;
+
+}
+
+
+
+.card:hover .photo{
+  filter:grayscale(0%) brightness(.95);
+  transform:scale(1.05);
+}
+
+
+
+/* Background Images */
+
+.p1{
+
+  background:
+  linear-gradient(
+  rgba(0,0,0,.3),
+  rgba(0,0,0,.6)
+  ),
+  url("../images/1008313804093163862.jpg");
+
+  background-size:cover;
+  background-position:top;
+
+}
+
+
+.p2{
+
+  background:
+  linear-gradient(
+  rgba(0,0,0,.3),
+  rgba(0,0,0,.6)
+  ),
+  url("../images/1150880879802631341.jpg");
+
+  background-size:cover;
+  background-position:top;
+
+}
+
+
+.p3{
+
+  background:
+  linear-gradient(
+  rgba(0,0,0,.3),
+  rgba(0,0,0,.6)
+  ),
+  url("../images/more\ pic\ like\ this\ contact\ me.jpg");
+
+  background-size:cover;
+  background-position:top;
+
+}
+
+
+.p4{
+
+  background:
+  linear-gradient(
+  rgba(0,0,0,.3),
+  rgba(0,0,0,.6)
+  ),
+  url("../images/Neat\ professional\ anime\ girl!.jpg");
+
+  background-size:cover;
+  background-position:top;
+
+}
+
+/* SCAN EFFECT */
+.scan{
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  height:2px;
+  background:var(--copper);
+  opacity:0;
+  animation:sweep 3s linear infinite;
+
+}
+
+
+.card:hover .scan{
+  opacity:.9;
+}
+
+@keyframes sweep{
+  from{
+    top:0;
+  }
+  to{
+    top:100%;
+  }
+}
+
+/* INFO */
+.card-info{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:18px;
+}
+
+.card{
+  transition: transform .4s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover{
+  transform:
+  perspective(1000px)
+  rotateY(-5deg)
+  rotateX(3deg)
+  scale(1.03);
+}
+
+.card-name{
+  color:var(--cream);
+  font-size:16px;
+  font-weight:500;
+}
+
+.card-role{
+  color:#B4B2A9;
+  font-size:12px;
+}
+
+/* Social */
+
+.social-links{
+  position:absolute;
+  right:20px;
+  bottom:40%;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(40px);
+  transition:.5s ease;
+}
+
+
+.card:hover .social-links{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+
+.social-links a{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  border:1px solid var(--copper);
+  color:var(--cream);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+}
+
+
+.social-links a:hover{
+  background:var(--copper);
+}
+
+/* SEAL */
+.seal{
+  position:absolute;
+  top:16px;
+  left:16px;
+}
+/* RESPONSIVE */
+
+@media(max-width:991px){
+  .team-grid{
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    height:1500px;
+  }
+  .team-stack{
+    flex-direction:column;
+    height: auto;
   }
 }
